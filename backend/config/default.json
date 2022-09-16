@@ -1,0 +1,15 @@
+{
+	"dbConfig":{
+		"client": "pg"
+	},
+	"authentication": {
+		"authStrategies": ["jwt", "local"],
+		"secret": "ad263a3cd0c122a9b8cd8a04533102207d42cd0f8d91c1f2fe023537b34fa403a0ec5ee12cff0370648fa6fa6c98dec60720757f5cc5d0bff9a234cc2aa0c13238d9b06462fb5ab9524e032ecb16026a4828ed48b185379fe9d2483fd7ac7b2956d6c78dd7001f64051446d5a74e265342ac691ef354012d75e1c87d098dc03b0efa43a3c77e3ad06c481a68e037604246d52c9eb48bc6b46080d9a9622f16bb9a534baa505dc3709f84504905f3f37f79915c6ef1c1e564fb0937360d98c685e39fc853c4a38a039c3c381dbf3d626ec6bd86f650f4138f16815ee00864c389af88d7f9823a3596932009d1b663e050e3ebea2a6c0d579da3d6bfc07e86252a",
+		"service": "users",
+		"entity": "user",
+		"local": {
+			"usernameField": "email",
+			"passwordField": "password"
+		}
+	}
+}
