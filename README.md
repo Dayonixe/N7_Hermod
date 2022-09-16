@@ -1,28 +1,28 @@
+# <img src="Logo.png" alt="Hermod" />ermod
 
-![](./Logo.png)
+Team : Pierre L. & Théo Pirouelle & Eléa T.
 
-# Hermod 
+<a href="https://www.python.org/">
+  <img src="https://img.shields.io/badge/language-Vue-41b883?style=flat-square" alt="laguage-Vue" />
+</a>
+
+---
+
 ## Description
 
-Projet du module *Applications Internet* de Pierre LOTTE, Théo PIROUELLE et Eléa TURC.
+Our project is a **Dashboard** which aims to be customizable and specific to each user. A user of the **Hermod** application will be able to choose the information he wants to have on his dashboard. This information has the particularity to be configurable and in real time.
 
-Notre projet est un *Dashboard* qui a pour objectif d'être personnalisable et propre à chaque utilisateur. Un utilisateur de l'application *Hermod* pourra ainsi choisir les informations qu'il souhaite avoir sur son dashboard. Ces informations ont la particularité d'être configurables et en temps réel.
+## Methodology
 
-> **Lien utile :**
-> - Production : http://hermod.prawse.fr/
-
-
-## Méthodologie
-
-- Création d'une branche personnelle pour le développement d'une fonctionnalité, la résolution d'un bug
-- Demande de merge request sur la branche "[main](https://gitlab.com/hermodn7/hermod/-/tree/main)"
-- Révision/Validation du code effectué par l'équipe
-- Une fois le merge validé, procéder à une dernière validation sur l'[IHM](http://hermod.prawse.fr/)
+- Creation of a personal branch for the development of a feature, the resolution of a bug;
+- Merge request on the `master` branch;
+- Code review/validation by the team;
+- Once the merge is validated, proceed to a final validation on the HMI.
 
 
-## Configuration
+## Setting
 
-Afin d'utiliser la base de données, ainsi que les APIs pour les widgets de météo et cinéma, il est nécessaire de créer un fichier `.env` à la racine du dossier *backend*. Ce fichier doit avoir la structure suivante :
+In order to use the database, as well as the APIs for the weather and movie widgets, it is necessary to create a `.env` file at the root of the *backend* folder. This file must have the following structure:
 
 ```
 WEATHER_API_KEY="XXXX"
@@ -37,56 +37,56 @@ DB_HOST="XXXX"
 
 ### Technologies
 
-Au cours de ce projet, nous avons pu utiliser les technologies suivantes :
+During this project, we were able to use the following technologies:
 
-- NodeJS : environnement d'exécution JavaScript utilisé principalement pour le backend de notre application;
-- VueJS : framework JavaScript utilisé pour le frontend;
-- FeathersJS : framework utilisé pour la gestion du temps réel;
-- PostgreSQL : SGBD utilisé pour la persistence des données.
+- NodeJS : JavaScript runtime environment used mainly for the backend of our application;
+- VueJS : JavaScript framework used for the frontend;
+- FeathersJS : framework used for real time management;
+- PostgreSQL : DBMS used for data persistence.
 
 
-## Manuel d'utilisation
+## User manual
 
-### Inscription
+### Registration
 
-Accéder à la page d'accueil de [Hermod](http://hermod.prawse.fr/), puis entrer un nom d'utilisateur, un e-mail et un mot de passe dans les champs prévus à cet effet. Pour valider l'inscription, il ne reste plus qu'à appuyer sur le bouton "Sign Up".
+Go to the Hermod home page, then enter a username, an e-mail and a password in the fields provided. To validate the registration, you just have to press the `Sign Up` button.
 
-### Connexion
+### Login
 
-Accéder à la page d'accueil de [Hermod](http://hermod.prawse.fr/), puis cliquer sur l'icone utilisateur en haut à droite de l'application. Une popup apparait, vous pouvez ainsi entrer votre e-mail et votre mot de passe dans les champs prévus à cet effet. Pour terminer la connexion, il ne reste qu'à appuyer sur le bouton "Login".
+Go to the Hermod home page, then click on the user icon on the top right of the application. A popup appears, you can enter your email and your password in the fields provided. To finish the connection, you just have to press the `Login` button.
 
-### Déconnexion
+### Logout
 
-Une fois connecté à l'application, vous pouvez vous déconnecter en cliquant sur le bouton situé en haut à droite de l'application. 
+Once connected to the application, you can disconnect by clicking on the button at the top right of the application.
 
 ### Widgets
 
-Une fois connecté à l'application, vous avez la possibilité d'ajouter divers widgets. Pour ce faire, il vous suffit de cliquer sur le bouton "+" en bas à droite de l'écran, puis de sélectionner le widget souhaité.
+Once connected to the application, you have the possibility to add various widgets. To do so, simply click on the `+` button at the bottom right of the screen, then select the desired widget.
 
-Si vous souhaitez supprimer un widget de votre dashboard, vous devez placer votre curseur sur le widget que vous voulez supprimer, puis faire un `clic droit` ou `clic molette`.
+If you want to remove a widget from your dashboard, you need to place your cursor on the widget you want to remove, then `right click` or `wheel click`.
 
-#### Widget Météo
+#### Weather widget
 
-Ajouter le "Weather Widget", une fois ajouté, vous avez la possibilité d'indiquer une ville dans le champ prévu à cet effet. Vous pouvez valider votre saisie via le bouton situé à droite du champ ou avec la touche "Enter" de votre clavier.
+Add the `Weather Widget`, once added, you have the possibility to indicate a city in the field provided for this purpose. You can validate your entry via the button located to the right of the field or with the `Enter` key on your keyboard.
 
-Le widget météo s'appuie sur l'API suivante : https://openweathermap.org/
+The weather widget is based on the following API: https://openweathermap.org/
 
-#### Widget Cinéma
+#### Cinema Widget
 
-Ajouter le "Cinema Widget", une fois ajouté, vous pouvez consulter les dernières sorties de films en appuyant sur les boutons latéraux du widget.
+Add the `Cinema Widget`, once added, you can view the latest movie releases by pressing the side buttons of the widget.
 
-Le widget cinéma s'appuie sur l'API suivante : https://www.themoviedb.org/
+The cinema widget is based on the following API: https://www.themoviedb.org/
 
-#### Widget ToDo List
+#### ToDo List Widget
 
-Ajouter le "TodoList Widget", une fois ajouté, vous avez la possibilité d'ajouter des éléments en renseignant le champ prévu à cet effet, puis en validant via le bouton situé à droite du champ ou avec la touche "Enter" de votre clavier. Une fois un élément ajouté, vous avez la possibilité de modifier son label en faisant un simple clic sur le texte et en validant votre modification en tapant sur la touche "Enter". Vous pouvez également supprimer l'élément avec le bouton de suppression à droite.
+Add the `TodoList Widget`, once added, you can add items by filling in the field provided for this purpose, then validating via the button located to the right of the field or with the `Enter` key on your keyboard. Once an element has been added, you can modify its label by simply clicking on the text and validating your modification by pressing the `Enter` key. You can also delete the element with the delete button on the right.
 
 ### Sidebar
 
-La sidebar a été ajoutée dans le but de retourner sur l'accueil de notre dashboard, d'accéder à un système de messagerie, de configurer des groupes pour mettre en commun divers widgets (comme le widget de ToDo List), ou encore d'accéder à un menu de paramètres pour personnaliser l'application.
+The sidebar has been added in order to return to the home of our dashboard, to access a messaging system, to configure groups to share various widgets (such as the ToDo List widget), or to access a settings menu to customize the application.
 
-Ces fonctionnalités constituent des perspectives de poursuite.
+These features are prospects for further development.
 
-### Persistence des données
+### Data persistence
 
-Lorsque vous faites des modifications sur votre compte (par exemple en ajoutant des widgets avec un certain ordre, des éléments dans le widget ToDo List), les données persistent. C'est-à-dire que vos informations sont enregistrées dans la base de données pour garder votre configuration et ne pas avoir à la recréer à chaque connexion.
+When you make changes to your account (e.g. adding widgets with a certain order, items in the ToDo List widget), the data persists. That is, your information is saved in the database so that you can keep your configuration and not have to recreate it each time you log in.
